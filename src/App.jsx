@@ -1,23 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import hsgLogo from "/hsg_logo.svg";
+import "./App.css";
 
-
-function App() {
-
-  function chanceCard(){
-    randNum = Math.floor(Math.random*6)+1
-    return(
-      <button onClick={handleClick}><img/></button>
-    )
-  }
-
+function Card() {
+  const randNum = Math.floor(Math.random * 6) + 1;
   return (
-    <>
-    
-    </>
-  )
+    <input type="image" src="/images/fff.png"/> 
+  );
 }
 
-export default App
+function App() {
+  return (
+    <>
+      <h1>Choose a card</h1>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+
+    </>
+  );
+}
+
+export default App;
